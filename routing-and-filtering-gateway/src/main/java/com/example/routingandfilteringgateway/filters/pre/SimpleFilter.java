@@ -1,3 +1,11 @@
+/*
+ * Filter : 
+ * pre : run before the request is routed
+ * post : run after thr request is routed
+ * route : can handle actual routing of request
+ * error : filter runs if error in course of handling the request
+ */
+
 package com.example.routingandfilteringgateway.filters.pre;
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+
 
 public class SimpleFilter extends ZuulFilter{
 	

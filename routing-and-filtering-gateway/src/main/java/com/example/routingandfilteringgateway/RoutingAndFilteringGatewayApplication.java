@@ -21,3 +21,16 @@ public class RoutingAndFilteringGatewayApplication {
 	}
 
 }
+
+
+/*
+ * To forward request to gateway, we need to tell the zuul application the routes it should watch and the services to 
+ * which to forward requests that are made to those routes.
+ * Specify routes by setting property under 
+ * zuul.routes
+ * zuul.routes.{APPLICATION-NAME}  
+ * example : zuul.routes.books
+ * 
+ * zuul.routes.books.url = http://localhost:8090
+ * 
+ */
